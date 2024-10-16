@@ -1,4 +1,4 @@
-import '/src/style.css'
+
 import { News} from "/src/data.js"
 function NewsComponent(){
     return(

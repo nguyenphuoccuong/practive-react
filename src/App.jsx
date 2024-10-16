@@ -1,5 +1,4 @@
 import './App.css'
-import '../src/style.css'
 import BannerComponent from './Banner/BannerComponent'
 import HeaderComponent from './header/HeaderComponent'
 import ContentComponent from './Content/ContentContainer'

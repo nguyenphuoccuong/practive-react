@@ -1,5 +1,4 @@
 import { books} from "/src/data.js"
-import '/src/style.css';
 
 function BookComponent (){
     return (

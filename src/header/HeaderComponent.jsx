@@ -1,4 +1,4 @@
-import '/src/style.css'
+
 export const menu = [
     {
         title: "Xuất Bản",

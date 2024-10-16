@@ -2,7 +2,7 @@ import { left_content } from "/src/data.js";
 import { content_center} from "/src/data.js"
 import { right_content} from "/src/data.js"
 import { books} from "/src/data.js"
-import '/src/style.css';
+
 
 function ContentComponent() {
     return (
