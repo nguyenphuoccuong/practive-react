@@ -11,7 +11,7 @@ function ApiComponent () {
   }
   
   const filData = data === '0' ? user : data?
-  user.filter((user)=> user.id === parseInt(data)): user;
+  user.filter((user) => user.id === parseInt(data)): user;
   
   useEffect (()=>{
     fetch('https://jsonplaceholder.typicode.com/usershttps://jsonplaceholder.typicode.com/users')
