@@ -4,6 +4,14 @@ import { useEffect, useState } from "react"
 function TestApiComponent () {
     const [user,setUser] = useState ([])
 
+    const [data,setdata] = useState ('')
+
+    const handleSearch = (e) =>{
+        setdata(e.target.value);
+    }
+    
+    const filData = data === '0' ? user : data ? user.filter((user) => user.id === parseInt(data)) : user;
+    
     useEffect (()=>{
         fetch('https://jsonplaceholder.typicode.com/users').then((res)=>{
             return res.json();
@@ -14,9 +22,10 @@ function TestApiComponent () {
 
     
     return (
-        <>
+        <div>
+            <input type="text" name="search" value={data} placeholder="Search" onChange={handleSearch}/>
             {
-                user.map((value,key)=>(
+                filData.map((value,key)=>(
                     <ul key={key}>
                         <li>User : {value.username}</li>
                         <li>Email: {value.email}</li>
@@ -26,7 +35,7 @@ function TestApiComponent () {
                 ))
             }
             
-        </>
+        </div>
     )
 }
 

@@ -29,7 +29,7 @@ function App() {
 
   return (
     <>
-    <Button variant="primary">Primary</Button>{'nut bam '}
+    {/* <Button variant="primary">Primary</Button>{'nut bam '}
     <Dropdown>
       <Dropdown.Toggle style={{backgroundColor:"red"}} variant="success" id="dropdown-basic">
         Dropdown Button
@@ -42,7 +42,7 @@ function App() {
       </Dropdown.Menu>
     </Dropdown>
 
-    {/* useState */}
+    {/* useState 
     <UseStateComponent/>
     <OptimizeFormComponent/>
     <InputField onInputChange={handleChange}/>
@@ -50,7 +50,7 @@ function App() {
 
     <UseEffectComponent/>
 
-    <BaitapComponent/>
+    <BaitapComponent/> */}
     
     <TestApiComponent/>
       {/* <div className="wrapper">
