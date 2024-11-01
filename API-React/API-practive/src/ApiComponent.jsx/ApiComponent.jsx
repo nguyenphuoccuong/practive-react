@@ -13,8 +13,9 @@ function ApiComponent () {
   const filData = data === '0' ? user : data?
   user.filter((user) => user.id === parseInt(data)): user;
   
+  
   useEffect (()=>{
-    fetch('https://jsonplaceholder.typicode.com/usershttps://jsonplaceholder.typicode.com/users')
+    fetch('https://jsonplaceholder.typicode.com/users')
     .then((res)=>{
       return res.json();
     }).then((data)=>{
@@ -29,7 +30,7 @@ function ApiComponent () {
           <Table striped bordered hover>
             <thead>
                 <tr>
-                    <th>#</th>
+                    <th>ID</th>
                     <th>User</th>
                     <th>Email</th>
                     <th>Address</th>
